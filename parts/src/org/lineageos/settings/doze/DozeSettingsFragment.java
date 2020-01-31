@@ -41,6 +41,7 @@ public class DozeSettingsFragment extends PreferenceFragmentCompat implements
     private SwitchPreferenceCompat mAlwaysOnDisplayPreference;
 
     private SwitchPreferenceCompat mPickUpPreference;
+    private SwitchPreferenceCompat mRaiseToWakePreference;
     private SwitchPreferenceCompat mHandwavePreference;
     private SwitchPreferenceCompat mPocketPreference;
 
@@ -76,6 +77,10 @@ public class DozeSettingsFragment extends PreferenceFragmentCompat implements
         mPickUpPreference.setEnabled(dozeEnabled);
         mPickUpPreference.setOnPreferenceChangeListener(this);
 
+        mRaiseToWakePreference = (SwitchPreferenceCompat) findPreference(DozeUtils.GESTURE_RAISE_TO_WAKE_KEY);
+        mRaiseToWakePreference.setEnabled(dozeEnabled);
+        mRaiseToWakePreference.setOnPreferenceChangeListener(this);
+
         mHandwavePreference = (SwitchPreferenceCompat) findPreference(DozeUtils.GESTURE_HAND_WAVE_KEY);
         mHandwavePreference.setEnabled(dozeEnabled);
         mHandwavePreference.setOnPreferenceChangeListener(this);
@@ -95,6 +100,8 @@ public class DozeSettingsFragment extends PreferenceFragmentCompat implements
         } else {
             pickupSensorCategory.setDependency(DozeUtils.ALWAYS_ON_DISPLAY);
             proximitySensorCategory.setDependency(DozeUtils.ALWAYS_ON_DISPLAY);
+            mPickUpPreference.setDependency(DozeUtils.GESTURE_RAISE_TO_WAKE_KEY);
+            mPocketPreference.setDependency(DozeUtils.GESTURE_RAISE_TO_WAKE_KEY);
         }
     }
 
@@ -123,6 +130,7 @@ public class DozeSettingsFragment extends PreferenceFragmentCompat implements
         mAlwaysOnDisplayPreference.setEnabled(isChecked);
 
         mPickUpPreference.setEnabled(isChecked);
+        mRaiseToWakePreference.setEnabled(isChecked);
         mHandwavePreference.setEnabled(isChecked);
         mPocketPreference.setEnabled(isChecked);
     }
