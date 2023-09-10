@@ -12,6 +12,7 @@
 /(vendor|system/vendor)/bin/remosaic_daemon   u:object_r:remosaic_daemon_exec:s0
 
 # Data files
+/data/vendor/dolby(/.*)?                      u:object_r:vendor_data_file:s0
 /data/vendor/fpc(/.*)?                        u:object_r:fingerprint_data_file:s0
 /data/vendor/goodix(/.*)?                     u:object_r:fingerprint_data_file:s0
 /data/vendor/gps(/.*)?                        u:object_r:gps_data_file:s0
@@ -52,6 +53,7 @@
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi                               u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-qti                                       u:object_r:hal_neuralnetworks_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.livedisplay-service\.xiaomi_sdm845                                      u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/vendor/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                                u:object_r:hal_dms_default_exec:s0
 
 # Persist files
 /mnt/vendor/persist/audio(/.*)?               u:object_r:persist_audio_file:s0
