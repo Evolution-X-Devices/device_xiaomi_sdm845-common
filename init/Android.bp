@@ -4,6 +4,12 @@
 //
 
 prebuilt_etc {
+    name: "fstab.zram",
+    src: "fstab.zram",
+    soc_specific: true,
+}
+
+prebuilt_etc {
     name: "init.qcom.power.rc",
     src: "init.qcom.power.rc",
     sub_dir: "init/hw",
