@@ -130,6 +130,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Graphics
 debug.hwui.skia_atrace_enabled=false
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.recomputecrop=0
