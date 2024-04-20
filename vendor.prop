@@ -129,6 +129,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Graphics
 debug.hwui.skia_atrace_enabled=false
+debug.sf.enable_transaction_tracing=false
 debug.sf.recomputecrop=0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
