@@ -131,6 +131,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 debug.egl.hw=0
 debug.hwui.skia_atrace_enabled=false
 debug.sf.hw=0
+debug.sf.recomputecrop=0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
