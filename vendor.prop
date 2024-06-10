@@ -169,6 +169,9 @@ persist.vendor.data.iwlan.enable=true
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Radio
 persist.vendor.radio.enableadvancedscan=false
 persist.vendor.radio.mt_sms_ack=30
