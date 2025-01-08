@@ -171,6 +171,7 @@ persist.vendor.data.iwlan.enable=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.perf.framepacing.enable=1
 
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
