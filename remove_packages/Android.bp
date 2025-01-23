@@ -2,7 +2,6 @@ cc_library_shared {
     name: "RemovePackages",
     overrides: [
         "AdaptiveVPNPrebuilt-10307",
-        "Chrome",
         "GoogleTTS",
         "ScribePrebuilt",
         "SoundAmplifierPrebuilt",
