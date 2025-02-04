@@ -3,9 +3,8 @@ cc_library_shared {
     overrides: [
         "AdaptiveVPNPrebuilt-10307",
         "GoogleTTS",
-        "ScribePrebuilt",
-        "SoundAmplifierPrebuilt",
-        "SwitchAccessPrebuilt",
+        "SoundAmplifierPrebuilt_v4.7.638126989",
+        "SwitchAccessPrebuilt_1.15.0.629986523",
         "talkback",
         "Tycho",
         "VoiceAccessPrebuilt",
