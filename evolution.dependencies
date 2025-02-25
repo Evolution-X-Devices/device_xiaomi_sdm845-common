@@ -1,9 +1,7 @@
 [
   {
-    "repository": "LineageOS/android_hardware_xiaomi",
-    "target_path": "hardware/xiaomi",
-    "remote": "github-non-los",
-    "branch": "lineage-22.0"
+    "repository": "hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
   },
   {
     "repository": "vendor_xiaomi_sdm845-common",
