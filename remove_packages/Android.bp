@@ -1,9 +1,10 @@
 cc_library_shared {
     name: "RemovePackages",
     overrides: [
-        "arcore",
         "AdaptiveVPNPrebuilt-10307",
+        "arcore",
         "GoogleTTS",
+        "Photos",
         "SoundAmplifierPrebuilt_v4.7.638126989",
         "SwitchAccessPrebuilt_1.15.0.629986523",
         "talkback",
