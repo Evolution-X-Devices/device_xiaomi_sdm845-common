@@ -1,6 +1,7 @@
 cc_library_shared {
     name: "RemovePackages",
     overrides: [
+        "arcore",
         "AdaptiveVPNPrebuilt-10307",
         "GoogleTTS",
         "SoundAmplifierPrebuilt_v4.7.638126989",
