@@ -53,7 +53,6 @@ vendor/lib/libspkrprot.so
 system/etc/permissions/audiosphere.xml
 system/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libdirac.so
 vendor/lib/soundfx/libshoebox.so
 
 # Bluetooth (A2DP)
