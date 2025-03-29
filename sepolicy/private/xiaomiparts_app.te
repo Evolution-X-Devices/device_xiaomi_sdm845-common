@@ -26,3 +26,7 @@ get_prop(xiaomiparts_app, settingslib_prop)
 # Allow XiaomiParts to read specific system properties
 get_prop(xiaomiparts_app, system_prop)
 get_prop(xiaomiparts_app, exported_system_prop)
+
+# Allow XiaomiParts to access to media player service
+allow xiaomiparts_app mediaserver_service:service_manager find;
+binder_call(xiaomiparts_app, mediaserver)
